@@ -2,12 +2,17 @@
   "name": "fullstack-monorepo",
   "version": "0.1.0",
   "private": true,
-  "packageManager": "pnpm@9",
+  "packageManager": "pnpm@10.15.0",
   "scripts": {
     "build": "pnpm -r build",
     "dev": "pnpm -r --parallel dev",
     "lint": "pnpm -r lint",
     "format": "pnpm -r format",
-    "start": "pnpm --filter @apps/api start:prod"
+    "start": "pnpm --filter @apps/api start:prod",
+    "web:dev": "pnpm --filter @apps/web dev",
+    "api:dev": "pnpm --filter @apps/api dev",
+    "prisma:generate": "pnpm --filter @apps/api prisma:generate",
+    "prisma:migrate": "pnpm --filter @apps/api prisma:migrate",
+    "prisma:deploy": "pnpm --filter @apps/api prisma:deploy"
   }
 }
