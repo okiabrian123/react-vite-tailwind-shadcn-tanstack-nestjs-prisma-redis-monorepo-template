@@ -1,0 +1,13 @@
+{
+  "name": "fullstack-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@9",
+  "scripts": {
+    "build": "pnpm -r build",
+    "dev": "pnpm -r --parallel dev",
+    "lint": "pnpm -r lint",
+    "format": "pnpm -r format",
+    "start": "pnpm --filter @apps/api start:prod"
+  }
+}
